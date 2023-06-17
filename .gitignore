@@ -1,0 +1,10 @@
+node_modules
+Redux-demo
+Demo Node
+.parcel-cache
+dist
+.cache
+*.log
+.DS_Store
+heap-20230204-201521-main.heapsnapshot
+heap-20230204-201521-worker1.heapsnapshot
