@@ -1,0 +1,76 @@
+/* header.css */
+
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbd5d9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo image */
+.logo {
+    height: 6rem;
+    padding-left: 1rem;
+}
+
+/* Navigation items */
+.nav-items {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-style-element {
+    display: flex;
+    list-style: none;
+}
+
+.nav-style-element li {
+    padding: 0 0.5rem;
+}
+
+.nav-style-element li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-style-element li a:hover {
+    color: #f26d7d;
+    font-weight: bold;
+}
+
+/* User info and online indicator */
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.user-info h1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #900;
+    margin-right: 1rem;
+}
+
+.online-indicator {
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+/* Log In/Out button */
+.login-button {
+    border: none;
+    background-color: #f26d7d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #d53f54;
+}

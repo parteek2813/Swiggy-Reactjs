@@ -5,13 +5,15 @@ import useOnline from './utils/useOnline';
 import UserContext from './Context';
 import { useSelector } from 'react-redux';
 
+import '../header.css'; // Import the CSS file
+
 const LoginUser = () => {
     return false;
 };
 
 const title = () => (
     <a href="/">
-        <img className="h-28 pl-2" src={Logo} alt="Food Villa" />
+        <img className="logo" src={Logo} alt="Food Villa" />
     </a>
 );
 
@@ -29,63 +31,55 @@ const Header = () => {
     const isOnline = useOnline();
 
     return (
-        <div className="flex justify-between bg-pink-50 shadow-lg">
+        <div className="header">
             {title()}
 
             <div className="nav-items nav-style">
-                <ul className="flex py-10 ">
-                    <li className="px-2">
+                <ul className="nav-style-element">
+                    <li>
                         <Link to="/"> Home</Link>
                     </li>
 
-                    <li className="px-2">
-                        {' '}
+                    <li>
                         <Link to="/about"> About</Link>
                     </li>
-                    <li className="px-2">
-                        {' '}
+                    <li>
                         <Link to="/contact"> Contact Us</Link>
                     </li>
 
-                    <li className="px-2">
-                        {' '}
+                    <li>
                         <Link to="/cart"> Cart- {cartItems.length} </Link>
                     </li>
 
-                    <li className="px-2">
-                        {' '}
+                    <li>
                         <Link to="/Instamart"> Instamart </Link>
                     </li>
-
-                    <UserContext.Consumer>
-                        {({ user }) => {
-                            <h4 className="font-bold text-xl m-3 p-3 ">
-                                {user.name} - {user.email}
-                            </h4>;
-                        }}
-                    </UserContext.Consumer>
                 </ul>
             </div>
 
-            <UserContext.Consumer>
-                {({ user }) => {
-                    <h4 className="font-bold text-xl m-3 p-3">
-                        {' '}
-                        {user.name} - {email.email}{' '}
-                    </h4>;
-                }}
-            </UserContext.Consumer>
+            <div className="user-info">
+                <h1>
+                    {user.name}-{email.email}
+                </h1>
 
-            <h1 className="p-10 font-bold text-red-900">
-                {user.name}-{email.email}
-            </h1>
-            {/* {console.log(user.email)} // undefined */}
-            <h1> {isOnline ? '✔' : '🎁'}</h1>
-            {isLoggedIn ? (
-                <button onClick={() => setisLoggenIn(false)}> Log In</button>
-            ) : (
-                <button onClick={() => setisLoggenIn(true)}> Log Out</button>
-            )}
+                <div className="online-indicator">{isOnline ? '✔' : '🎁'}</div>
+
+                {isLoggedIn ? (
+                    <button
+                        className="login-button"
+                        onClick={() => setisLoggenIn(false)}
+                    >
+                        Log In
+                    </button>
+                ) : (
+                    <button
+                        className="login-button"
+                        onClick={() => setisLoggenIn(true)}
+                    >
+                        Log Out
+                    </button>
+                )}
+            </div>
         </div>
     );
 };
