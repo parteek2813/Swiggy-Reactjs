@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useOnline from './utils/useOnline';
 import UserContext from './Context';
 import { useSelector } from 'react-redux';
-
+import { BodyContext } from './Context';
 import '../styling/header.css'; // Import the CSS file
 
 const LoginUser = () => {
@@ -149,7 +149,10 @@ const Header = () => {
                 </div>
             </div>
 
-            <Body searchVisible={searchVisible}></Body>
+            {/* <Body searchVisible={searchVisible}></Body> */}
+            <BodyContext.Provider value={searchVisible}>
+                <Body />
+            </BodyContext.Provider>
         </>
     );
 };

@@ -1,7 +1,7 @@
 import React, { Children, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './Componenets/Header';
-// import Body from './Componenets/Body';
+import Body from './Componenets/Body';
 import Footer from './Componenets/Footer';
 import { IMG_CDN_URL } from './Componenets/Constants';
 import About from './Componenets/about';
@@ -54,17 +54,17 @@ const appRouter = createBrowserRouter([
         element: <AppLayout />,
         errorElement: <ErrorPage />,
         children: [
-            // {
-            //     path: '/',
-            //     element: (
-            //         <Body
-            //             user={{
-            //                 name: 'Parteek Kumar',
-            //                 Email: 'ujeefanclub@gmail.com'
-            //             }}
-            //         />
-            //     )
-            // },
+            {
+                path: '/',
+                element: (
+                    <Body
+                        user={{
+                            name: 'Parteek Kumar',
+                            Email: 'ujeefanclub@gmail.com'
+                        }}
+                    />
+                )
+            },
             {
                 path: '/about',
                 element: <About />,

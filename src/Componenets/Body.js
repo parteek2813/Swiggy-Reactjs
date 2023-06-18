@@ -8,14 +8,16 @@ import { filter } from './Helper';
 import useOnline from './utils/useOnline';
 import { useContext } from 'react';
 import UserContext from './Context';
+import { BodyContext } from './Context';
 
 import '../body.css';
 
-const Body = ({ user, searchVisible }) => {
+const Body = ({ user }) => {
     const [allRestraunt, setAllRestraunts] = useState([]);
     const [searchtext, setsearchtext] = useState('');
     const [filteredRestraunts, setfilteredRestraunts] = useState([]);
 
+    const searchVisible = useContext(BodyContext);
     useEffect(() => {
         getRestaurants();
     }, []);
@@ -78,7 +80,7 @@ const Body = ({ user, searchVisible }) => {
                 </div>
             ) : null}
 
-            <div className="restaurants-container ml-8">
+            <div className="restaurants-container ml-8 mt-5">
                 {/* <RestrauntCard restraunt = {restrauntList[0]}/>
           <RestrauntCard restraunt = {restrauntList[1]}/>
           <RestrauntCard restraunt = {restrauntList[2]}/>

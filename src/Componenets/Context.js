@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import React, { createContext } from 'react';
 
 const UserContext = createContext({
     user: {
@@ -8,5 +8,7 @@ const UserContext = createContext({
         email: 'Dummy@gmail.com'
     }
 });
+
+export const BodyContext = React.createContext();
 
 export default UserContext;
