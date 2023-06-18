@@ -1,12 +1,11 @@
-/* header.css */
-
 /* Header container */
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #fbd5d9;
+    background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
 }
 
 /* Logo image */
@@ -17,14 +16,18 @@
 
 /* Navigation items */
 .nav-items {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 5rem;
+    margin-right: 1rem;
+    margin-left: 100px;
 }
 
 .nav-style-element {
     display: flex;
     list-style: none;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-style-element li {
@@ -39,6 +42,46 @@
 .nav-style-element li a:hover {
     color: #f26d7d;
     font-weight: bold;
+}
+
+/* location div and address*/
+.header .location-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: -1px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.location-div .other {
+    font-weight: 700;
+    color: #3d4152;
+    float: left;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #3d4152;
+}
+.location-div .other:hover {
+    color: #fc8019;
+    border-bottom: 2px solid #fc8019;
+}
+.location-div .location {
+    display: block;
+    font-weight: 300;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: #686b78;
+}
+.location-div .arrow-down {
+    position: absolute;
+    right: -6%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #fc8019;
+    font-weight: 700;
 }
 
 /* User info and online indicator */
@@ -73,4 +116,15 @@
 
 .login-button:hover {
     background-color: #d53f54;
+}
+
+.logo {
+    width: 180px;
+    height: 50px;
+    margin-left: 140px;
+    margin-top: 0px;
+}
+
+.other {
+    position: relative;
 }
