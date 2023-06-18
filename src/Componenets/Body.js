@@ -28,7 +28,7 @@ const Body = ({ user, searchVisible }) => {
 
         const json = await data.json();
 
-        setAllRestraunts(json?.data?.cards[0]?.data?.data?.cards);
+        setAllRestraunts(json?.data?.cards[2]?.data?.data?.cards);
         console.log(json?.data?.cards[2]?.data?.data?.cards);
         setfilteredRestraunts(json?.data?.cards[2]?.data?.data?.cards);
     }
@@ -63,6 +63,8 @@ const Body = ({ user, searchVisible }) => {
                             setsearchtext(e.target.value);
                         }}
                     />
+
+                    {console.log(setsearchtext)}
 
                     <button
                         className="search-button"
