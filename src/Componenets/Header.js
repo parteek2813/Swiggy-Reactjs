@@ -36,6 +36,9 @@ const Header = () => {
     const [isLoggedIn, setisLoggenIn] = useState(true);
     const isOnline = useOnline();
 
+    // const AppWrapper = ()=>{
+    //     return <App></App>
+    // }
     return (
         <>
             <div className="header">
@@ -151,7 +154,7 @@ const Header = () => {
 
             {/* <Body searchVisible={searchVisible}></Body> */}
             <BodyContext.Provider value={searchVisible}>
-                <Body />
+                {/* <Body /> */}
             </BodyContext.Provider>
         </>
     );

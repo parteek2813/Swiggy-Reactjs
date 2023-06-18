@@ -26,6 +26,7 @@
     padding: 0.5rem;
     background-color: transparent;
     border: none;
+    width: 609px;
     border-radius: 0;
     border-bottom: 1px solid #ccc;
     transition: border-color 0.3s ease;
@@ -42,6 +43,7 @@
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #ccc;
+    width: 609px;
     resize: vertical;
     transition: border-color 0.3s ease;
 }
@@ -52,8 +54,7 @@
 }
 
 .contact-button {
-    background-color: #f26d7d;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 0.5rem 1rem;
@@ -62,7 +63,7 @@
     transition: background-color 0.3s ease;
 }
 
-.contact-button:hover,
-.contact-button:focus {
+.contact-button:hover {
     background-color: #d53f54;
+    color: white;
 }

@@ -20,7 +20,6 @@ export const RestrauntCard = ({
                 <h3 className="text-sm"> {cuisines?.join(', ')} </h3>
 
                 <h4 className="text-xs"> {totalRatingsString} </h4>
-                <h4 className="font-bold "> {user?.name}</h4>
             </div>
         </div>
     );

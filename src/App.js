@@ -15,6 +15,8 @@ import Instamart from './Componenets/Instamart';
 import { Provider } from 'react-redux';
 import store from './Componenets/utils/store';
 import Cart from './Componenets/Cart';
+import { useContext } from 'react';
+import { BodyContext } from './Componenets/Context';
 
 const AppLayout = () => {
     //local state of App Layout
