@@ -78,7 +78,7 @@ const Body = ({ user, searchVisible }) => {
                 </div>
             ) : null}
 
-            <div className="restaurants-container">
+            <div className="restaurants-container ml-8">
                 {/* <RestrauntCard restraunt = {restrauntList[0]}/>
           <RestrauntCard restraunt = {restrauntList[1]}/>
           <RestrauntCard restraunt = {restrauntList[2]}/>

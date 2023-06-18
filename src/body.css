@@ -45,3 +45,9 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+.card-container {
+    width: 200px;
+    height: 298px;
+    overflow: hidden;
+}
