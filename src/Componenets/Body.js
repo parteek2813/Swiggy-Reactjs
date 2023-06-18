@@ -17,10 +17,12 @@ const Body = ({ user }) => {
     const [searchtext, setsearchtext] = useState('');
     const [filteredRestraunts, setfilteredRestraunts] = useState([]);
 
-    const searchVisible = useContext(BodyContext);
     useEffect(() => {
         getRestaurants();
     }, []);
+
+    const searchVisible = useContext(BodyContext);
+    console.log(searchVisible);
 
     async function getRestaurants() {
         const data = await fetch(
@@ -31,7 +33,7 @@ const Body = ({ user }) => {
         const json = await data.json();
 
         setAllRestraunts(json?.data?.cards[2]?.data?.data?.cards);
-        console.log(json?.data?.cards[2]?.data?.data?.cards);
+        // console.log(json?.data?.cards[2]?.data?.data?.cards);
         setfilteredRestraunts(json?.data?.cards[2]?.data?.data?.cards);
     }
 
@@ -65,8 +67,6 @@ const Body = ({ user }) => {
                             setsearchtext(e.target.value);
                         }}
                     />
-
-                    {console.log(setsearchtext)}
 
                     <button
                         className="search-button"
