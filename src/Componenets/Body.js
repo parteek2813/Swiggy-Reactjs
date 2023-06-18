@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { restrauntList } from './Constants';
 import { RestrauntCard } from './RestrauntCard';
+import Header from './Header';
 import Shimer from './Shimer';
 import { Link } from 'react-router-dom';
 import { filter } from './Helper';
@@ -8,9 +9,9 @@ import useOnline from './utils/useOnline';
 import { useContext } from 'react';
 import UserContext from './Context';
 
-import '../body.css'; // Import the CSS file
+import '../body.css';
 
-const Body = ({ user }) => {
+const Body = ({ user, searchVisible }) => {
     const [allRestraunt, setAllRestraunts] = useState([]);
     const [searchtext, setsearchtext] = useState('');
     const [filteredRestraunts, setfilteredRestraunts] = useState([]);
@@ -21,13 +22,15 @@ const Body = ({ user }) => {
 
     async function getRestaurants() {
         const data = await fetch(
-            'https://www.swiggy.com/dapi/restaurants/list/v5?lat=29.139117687032826&lng=76.70138239860535&page_type=DESKTOP_WEB_LISTING'
+            // 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=29.139117687032826&lng=76.70138239860535&page_type=DESKTOP_WEB_LISTING'
+            'https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING'
         );
 
         const json = await data.json();
 
         setAllRestraunts(json?.data?.cards[0]?.data?.data?.cards);
-        setfilteredRestraunts(json?.data?.cards[0]?.data?.data?.cards);
+        console.log(json?.data?.cards[2]?.data?.data?.cards);
+        setfilteredRestraunts(json?.data?.cards[2]?.data?.data?.cards);
     }
 
     const isOnline = useOnline();
@@ -49,27 +52,29 @@ const Body = ({ user }) => {
         <Shimer />
     ) : (
         <>
-            <div className="SearchContainer">
-                <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Search"
-                    value={searchtext}
-                    onChange={(e) => {
-                        setsearchtext(e.target.value);
-                    }}
-                />
+            {searchVisible ? (
+                <div className="SearchContainer p-2">
+                    <input
+                        type="text"
+                        className="search-input"
+                        placeholder="Search for restaurants and food"
+                        value={searchtext}
+                        onChange={(e) => {
+                            setsearchtext(e.target.value);
+                        }}
+                    />
 
-                <button
-                    className="search-button"
-                    onClick={() => {
-                        const data = filter(searchtext, allRestraunt);
-                        setfilteredRestraunts(data);
-                    }}
-                >
-                    Search
-                </button>
-            </div>
+                    <button
+                        className="search-button"
+                        onClick={() => {
+                            const data = filter(searchtext, allRestraunt);
+                            setfilteredRestraunts(data);
+                        }}
+                    >
+                        Search
+                    </button>
+                </div>
+            ) : null}
 
             <div className="restaurants-container">
                 {/* <RestrauntCard restraunt = {restrauntList[0]}/>
