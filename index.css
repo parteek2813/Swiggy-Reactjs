@@ -9,17 +9,17 @@
     border: 1px solid black;
 }
 
-.nav-items > ul{
+.nav-items > ul {
     list-style-type: none;
     display: flex;
 }
-.nav-items >ul>li{
+.nav-items > ul > li {
     padding: 20px;
 }
-.logo{
+.logo {
     width: 100px;
     height: 100px;
-}
+} */
 
 .card {
     width: 140px;
@@ -30,18 +30,17 @@
 
 .card > img {
     width: 100%;
-   
-
 }
-.cardlist{
+.cardlist {
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap-reverse;
 }
 
-.cardlist .shimer-card{
+.cardlist .shimer-card {
     width: 200px;
     height: 200px;
-    background: rgb(173, 168, 168);
+    background: rgb(209, 207, 207);
     margin: 20px;
-
-} */
+    border-radius: 10%;
+}
