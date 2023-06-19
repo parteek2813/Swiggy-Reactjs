@@ -68,7 +68,7 @@ const Instamart = () => {
                                         >
                                             <div class="style-13">
                                                 <p class="style-14">
-                                                    Dairy, bread &amp; eggs
+                                                    Dairy, bread &amp;
                                                 </p>
                                             </div>
                                         </div>
@@ -78,7 +78,7 @@ const Instamart = () => {
                                         >
                                             <div class="style-16">
                                                 <p class="style-17">
-                                                    Snacks &amp; indulgences
+                                                    Snacks indulgences
                                                 </p>
                                             </div>
                                         </div>
@@ -120,8 +120,8 @@ const Instamart = () => {
                                     <span class="style-32"></span>
                                     <p class="style-33">
                                         Trusted by millions of shoppers in
-                                        Bangalore, Delhi-NCR, Hyderabad, Mumbai,
-                                        Chennai, Pune &amp; other cities
+                                        Bangalore and Delhi-NCR, Hyderabad,
+                                        Mumbai, Chennai, Pune &amp; other cities
                                     </p>
                                 </div>
                                 <div class="style-34"></div>
@@ -381,7 +381,7 @@ const Instamart = () => {
                     </div>
                 </div>
             </div>
-            <div className="p-20">
+            <div>
                 <Section
                     title={'About Instamart'}
                     description={

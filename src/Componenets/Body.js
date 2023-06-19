@@ -80,66 +80,66 @@ const Body = ({ user }) => {
                 </div>
             ) : null}
 
-            <div class="style-0">
-                <div class="style-1">
-                    <div class="style-2">
-                        <div className="style-3">
-                            <div class="style-4" subtype="topCarousel">
+            <div class="style-500">
+                <div class="style-501">
+                    <div class="style-502">
+                        <div className="style-503">
+                            <div class="style-504" subtype="topCarousel">
                                 <a
                                     href="/collections/56413?type=rcv2"
-                                    class="style-5"
+                                    class="style-505"
                                 >
                                     <img
                                         width="260"
                                         height="260"
                                         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t"
-                                        class="style-6"
+                                        class="style-506"
                                     />
                                 </a>
                             </div>
-                            <div class="style-7" subtype="topCarousel">
+                            <div class="style-507" subtype="topCarousel">
                                 <a
                                     href="/collections/56414?type=rcv2"
-                                    class="style-8"
+                                    class="style-508"
                                 >
                                     <img
                                         width="260"
                                         height="260"
                                         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/nhubtkw7dukg3ukcmpam"
-                                        class="style-9"
+                                        class="style-509"
                                     />
                                 </a>
                             </div>
-                            <div class="style-10" subtype="topCarousel">
+                            <div class="style-510" subtype="topCarousel">
                                 <a
                                     href="/collections/11740?type=rcv2"
-                                    class="style-11"
+                                    class="style-511"
                                 >
                                     <img
                                         width="260"
                                         height="260"
                                         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/oxe97jexxbnxqtbhg2zo"
-                                        class="style-12"
+                                        class="style-512"
                                     />
                                 </a>
                             </div>
-                            <div class="style-13" subtype="topCarousel">
+                            <div class="style-513" subtype="topCarousel">
                                 <a
                                     href="/collections/56421?type=rcv2"
-                                    class="style-14"
+                                    class="style-514"
                                 >
                                     <img
                                         width="260"
                                         height="260"
                                         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3"
-                                        class="style-15"
+                                        class="style-515"
                                     />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <button class="style-16">
-                        <i class="style-17"></i>
+                    <button class="style-516">
+                        <i class="style-517"></i>
                     </button>
                 </div>
             </div>
