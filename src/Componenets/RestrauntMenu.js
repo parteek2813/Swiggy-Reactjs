@@ -11,7 +11,7 @@ const RestrauntMenu = () => {
 
     const dispatch = useDispatch();
 
-    const restraunt = useRestraunt(resId);
+    const restraunt = useRestraunt(resId); // it is returning json data
 
     const addFoodItem = (item) => {
         dispatch(addItem(item));
@@ -30,16 +30,21 @@ const RestrauntMenu = () => {
             <div className="flex">
                 <div>
                     <h1>Restraunt id: {resId} </h1>
-                    <h2> {restraunt.name}</h2>
+                    <h2>
+                        Restraunt Name: {restraunt.cards[0].card.card.info.name}
+                    </h2>
 
                     <img
-                        src={IMG_CDN_URL + restraunt.cloudinaryImageId}
+                        src={
+                            IMG_CDN_URL +
+                            restraunt.cards[0].card.card.info.cloudinaryImageId
+                        }
                         alt="Menu Image"
                     />
-                    <h3>{restraunt.area}</h3>
-                    <h3>{restraunt.city}</h3>
-                    <h3>{restraunt.avgRating}</h3>
-                    <h3>{restraunt.costForTwo}</h3>
+                    <h3>{restraunt.cards[0].card.card.info.areaName}</h3>
+                    <h3>{restraunt.cards[0].card.card.info.city}</h3>
+                    <h3>{restraunt.cards[0].card.card.info.avgRating}</h3>
+                    <h3>{restraunt.cards[0].card.card.info.costForTwo}</h3>
                 </div>
 
                 {/* <div>
@@ -48,7 +53,7 @@ const RestrauntMenu = () => {
 
                 <div className="p-5">
                     <h1>Menu</h1>
-                    <ul>
+                    {/* <ul>
                         {Object.values(restraunt?.menu?.items).map((item) => (
                             <li key={item.id}>
                                 {item.name}-{' '}
@@ -60,7 +65,7 @@ const RestrauntMenu = () => {
                                 </button>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </>

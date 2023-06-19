@@ -22,7 +22,6 @@ const Body = ({ user }) => {
     }, []);
 
     const searchVisible = useContext(BodyContext);
-    console.log(searchVisible);
 
     async function getRestaurants() {
         const data = await fetch(
