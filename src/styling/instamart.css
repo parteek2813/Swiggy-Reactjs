@@ -1840,3 +1840,38 @@
     text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.style-142 {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none solid rgb(40, 44, 63);
+    color: rgb(40, 44, 63);
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.style-143 {
+    display: inline;
+    cursor: auto;
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.style-144 {
+    height: 1.7142857142857142rem;
+    margin: 0px 16px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 16px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
