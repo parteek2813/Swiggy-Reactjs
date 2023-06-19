@@ -381,7 +381,7 @@ const Instamart = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="p-20">
                 <Section
                     title={'About Instamart'}
                     description={

@@ -80,6 +80,70 @@ const Body = ({ user }) => {
                 </div>
             ) : null}
 
+            <div class="style-0">
+                <div class="style-1">
+                    <div class="style-2">
+                        <div className="style-3">
+                            <div class="style-4" subtype="topCarousel">
+                                <a
+                                    href="/collections/56413?type=rcv2"
+                                    class="style-5"
+                                >
+                                    <img
+                                        width="260"
+                                        height="260"
+                                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t"
+                                        class="style-6"
+                                    />
+                                </a>
+                            </div>
+                            <div class="style-7" subtype="topCarousel">
+                                <a
+                                    href="/collections/56414?type=rcv2"
+                                    class="style-8"
+                                >
+                                    <img
+                                        width="260"
+                                        height="260"
+                                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/nhubtkw7dukg3ukcmpam"
+                                        class="style-9"
+                                    />
+                                </a>
+                            </div>
+                            <div class="style-10" subtype="topCarousel">
+                                <a
+                                    href="/collections/11740?type=rcv2"
+                                    class="style-11"
+                                >
+                                    <img
+                                        width="260"
+                                        height="260"
+                                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/oxe97jexxbnxqtbhg2zo"
+                                        class="style-12"
+                                    />
+                                </a>
+                            </div>
+                            <div class="style-13" subtype="topCarousel">
+                                <a
+                                    href="/collections/56421?type=rcv2"
+                                    class="style-14"
+                                >
+                                    <img
+                                        width="260"
+                                        height="260"
+                                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3"
+                                        class="style-15"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="style-16">
+                        <i class="style-17"></i>
+                    </button>
+                </div>
+            </div>
+
             <div className="restaurants-container ml-8 mt-5">
                 {/* <RestrauntCard restraunt = {restrauntList[0]}/>
           <RestrauntCard restraunt = {restrauntList[1]}/>
