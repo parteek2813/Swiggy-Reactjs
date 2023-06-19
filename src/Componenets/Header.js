@@ -73,7 +73,7 @@ const Header = () => {
 
                         {/* flow-- i will click the search button -> set callback--> ifusersetsearch==true --> then only display search container */}
 
-                        <li className="flex items-center">
+                        <li className="offer-head flex items-center">
                             <svg
                                 class="_1GTCc"
                                 viewBox="0 0 32 32"
@@ -88,7 +88,7 @@ const Header = () => {
                             </span>
                         </li>
 
-                        <li className="flex items-center">
+                        <li className="help-head flex items-center">
                             <svg
                                 class="_1GTCc"
                                 viewBox="6 -1 12 25"
@@ -103,7 +103,7 @@ const Header = () => {
                             </span>
                         </li>
 
-                        <li className="flex items-center">
+                        <li className="cart-head flex items-center">
                             <svg
                                 class="_1GTCc _173fq"
                                 viewBox="-1 0 37 32"
@@ -121,7 +121,7 @@ const Header = () => {
                             </span>
                         </li>
 
-                        <li className="flex items-center">
+                        <li className="instamart-head flex items-center">
                             <img src={user} className="w-3 h-3"></img>
                             <Link to="/Instamart"> Instamart </Link>
                         </li>

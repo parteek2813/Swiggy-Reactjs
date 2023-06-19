@@ -80,13 +80,14 @@ const Body = ({ user }) => {
                 </div>
             ) : null}
 
+            {/* carousal Part  */}
             <div class="style-500">
                 <div class="style-501">
                     <div class="style-502">
-                        <div className="style-503">
+                        <div className="style-503 flex justify-between ml-20 mr-20 mt-8">
                             <div class="style-504" subtype="topCarousel">
                                 <a
-                                    href="/collections/56413?type=rcv2"
+                                    // href="/collections/56413?type=rcv2"
                                     class="style-505"
                                 >
                                     <img
@@ -99,7 +100,7 @@ const Body = ({ user }) => {
                             </div>
                             <div class="style-507" subtype="topCarousel">
                                 <a
-                                    href="/collections/56414?type=rcv2"
+                                    // href="/collections/56414?type=rcv2"
                                     class="style-508"
                                 >
                                     <img
@@ -112,7 +113,7 @@ const Body = ({ user }) => {
                             </div>
                             <div class="style-510" subtype="topCarousel">
                                 <a
-                                    href="/collections/11740?type=rcv2"
+                                    // href="/collections/11740?type=rcv2"
                                     class="style-511"
                                 >
                                     <img
@@ -125,7 +126,7 @@ const Body = ({ user }) => {
                             </div>
                             <div class="style-513" subtype="topCarousel">
                                 <a
-                                    href="/collections/56421?type=rcv2"
+                                    // href="/collections/56421?type=rcv2"
                                     class="style-514"
                                 >
                                     <img
@@ -144,6 +145,7 @@ const Body = ({ user }) => {
                 </div>
             </div>
 
+            {/* Resaurant Part */}
             <div className="restaurants-container ml-8 mt-5">
                 {/* <RestrauntCard restraunt = {restrauntList[0]}/>
           <RestrauntCard restraunt = {restrauntList[1]}/>

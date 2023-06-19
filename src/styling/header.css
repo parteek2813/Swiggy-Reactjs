@@ -128,3 +128,15 @@
 .other {
     position: relative;
 }
+
+@media screen and (max-width: 767px) {
+    .header .offer-head,
+    .header .help-head,
+    .header .cart-head {
+        display: none;
+    }
+
+    .header .location-div {
+        display: none;
+    }
+}
